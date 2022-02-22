@@ -12,7 +12,7 @@ public class Cicd2Controller {
 	@GetMapping("show/{name}")
 	public ResponseEntity<Object> show(@PathVariable String name) {
 		
-		String msg = "Hello, Welcome to CICD2: from dev change" + name;
+		String msg = "Hello, Welcome to CICD2: only dev branch" + name;
 		return new ResponseEntity<Object>(msg, HttpStatus.OK); 
 	}
 }
